@@ -1,21 +1,91 @@
 package homework.hw_3;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         Car car1 = new Car("toyota", 2021, 250);
 
-        Skill skill1 = new Skill("java", 10);
+        ArrayList<Object> skillsList1 = new ArrayList<>();
+        skillsList1.add(new Skill("java", 10));
+        skillsList1.add(new Skill("js", 5));
+        skillsList1.add(new Skill("c++", 15));
 
-        ArrayList<Skill> skills1 = new ArrayList<>();
+        ArrayList<Object> skillsList2 = new ArrayList<>();
+        skillsList2.add(new Skill("java", 10));
+        skillsList2.add(new Skill("js", 5));
+        skillsList2.add(new Skill("c++", 15));
+        skillsList2.add(new Skill("python", 15));
 
-        skills1.add(new Skill("java", 10));
-        skills1.add(new Skill("js", 5));
-        skills1.add(new Skill("c++", 15));
+        ArrayList<Object> skillsList3 = new ArrayList<>();
+        skillsList3.add(new Skill("java", 10));
+        skillsList3.add(new Skill("js", 5));
+        skillsList3.add(new Skill("c++", 15));
+
+        ArrayList<Object> skillsList4 = new ArrayList<>();
+        skillsList4.add(new Skill("java", 10));
+        skillsList4.add(new Skill("js", 5));
+        skillsList4.add(new Skill("c++", 15));
+        skillsList4.add(new Skill("python", 15));
+        skillsList4.add(new Skill("node", 9));
+
+        ArrayList<Object> skillsList5 = new ArrayList<>();
+        skillsList5.add(new Skill("java", 10));
+        skillsList5.add(new Skill("js", 5));
+        skillsList5.add(new Skill("c++", 15));
+
+        ArrayList<Object> skillsList6 = new ArrayList<>();
+        skillsList6.add(new Skill("java", 10));
+        skillsList6.add(new Skill("js", 5));
+        skillsList6.add(new Skill("c++", 15));
+        skillsList6.add(new Skill("python", 15));
+        skillsList6.add(new Skill("node", 9));
+
+        ArrayList<Object> skillsList7 = new ArrayList<>();
+        skillsList7.add(new Skill("java", 10));
+        skillsList7.add(new Skill("js", 5));
+        skillsList7.add(new Skill("c++", 15));
+        skillsList7.add(new Skill("python", 15));
+        skillsList7.add(new Skill("node", 9));
+        skillsList7.add(new Skill("SQL", 7));
+
+
+        ArrayList<Object> skillsList8 = new ArrayList<>();
+        skillsList8.add(new Skill("java", 10));
+        skillsList8.add(new Skill("js", 5));
+        skillsList8.add(new Skill("c++", 15));
+        skillsList8.add(new Skill("python", 15));
+        skillsList8.add(new Skill("node", 9));
+        skillsList8.add(new Skill("SQL", 7));
+
+
+        ArrayList<Object> skillsList9 = new ArrayList<>();
+        skillsList9.add(new Skill("java", 10));
+        skillsList9.add(new Skill("c++", 15));
+        skillsList9.add(new Skill("node", 9));
+        skillsList9.add(new Skill("SQL", 7));
+
+
+        ArrayList<Object> skillsList10 = new ArrayList<>();
+        skillsList10.add(new Skill("java", 10));
+        skillsList10.add(new Skill("js", 5));
+        skillsList10.add(new Skill("c++", 15));
+        skillsList10.add(new Skill("python", 15));
+        skillsList10.add(new Skill("SQL", 7));
+
+
+//        Skill[] skillsList1 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15)};
+//        Skill[] skillsList2 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15), new Skill("python", 15)};
+//        Skill[] skillsList3 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15)};
+//        Skill[] skillsList4 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15), new Skill("python", 15), new Skill("node", 9)};
+//        Skill[] skillsList5 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15)};
+//        Skill[] skillsList6 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15)};
+//        Skill[] skillsList7 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15), new Skill("python", 15), new Skill("node", 9), new Skill("SQL", 9)};
+//        Skill[] skillsList8 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15)};
+//        Skill[] skillsList9 = new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15)};
+//        Skill[] skillsList10 =new Skill[]{new Skill("java", 10), new Skill("js", 5), new Skill("c++", 15), new Skill("python", 15), new Skill("node", 9)};
+
+
 
         User userPupkin = new User(1,
                 "Vasyl",
@@ -23,11 +93,9 @@ public class Main {
                 "asd@asd.com",
                 31,
                 "MALE",
-                skills1,
+                skillsList1,
                 new Car("toyota", 2021, 250)
         );
-
-        userPupkin.getSkills().add(new Skill("node", 10));
 
         User userKokos = new User(2,
                 "Jura",
@@ -35,7 +103,7 @@ public class Main {
                 "asv@asd.com",
                 30,
                 "MALE",
-                skills1,
+                skillsList2,
                 new Car("toyota", 2020, 200)
         );
 
@@ -45,7 +113,7 @@ public class Main {
                 "afv@asd.com",
                 25,
                 "MALE",
-                skills1,
+                skillsList3,
                 new Car("volvo", 2024, 500)
         );
 
@@ -55,7 +123,7 @@ public class Main {
                 "morozova@asd.com",
                 19,
                 "FEMALE",
-                skills1,
+                skillsList4,
                 new Car("Lada", 1995, 10)
         );
 
@@ -65,7 +133,7 @@ public class Main {
                 "Koksova@asd.com",
                 28,
                 "FEMALE",
-                skills1,
+                skillsList5,
                 new Car("Opel", 2012, 300)
         );
 
@@ -75,7 +143,7 @@ public class Main {
                 "Sovor@asd.com",
                 45,
                 "MALE",
-                skills1,
+                skillsList6,
                 new Car("Audi", 2022, 400)
         );
 
@@ -85,7 +153,7 @@ public class Main {
                 "Mohov@asd.com",
                 20,
                 "MALE",
-                skills1,
+                skillsList7,
                 new Car("Vaz", 2000, 200)
         );
 
@@ -95,7 +163,7 @@ public class Main {
                 "Barova@asd.com",
                 25,
                 "FEMALE",
-                skills1,
+                skillsList8,
                 new Car("Sitroen", 2020, 200)
         );
 
@@ -105,7 +173,7 @@ public class Main {
                 "Krotova@asd.com",
                 31,
                 "FEMALE",
-                skills1,
+                skillsList9,
                 new Car("reno", 2018, 200)
         );
 
@@ -115,11 +183,11 @@ public class Main {
                 "Smehova@asd.com",
                 45,
                 "FEMALE",
-                skills1,
+                skillsList10,
                 new Car("Peugeot", 2020, 200)
         );
 
-        HashSet<User> usersHashSet = new HashSet<>();
+        LinkedHashSet<User> usersHashSet = new LinkedHashSet<>();
         usersHashSet.add(userPupkin);
         usersHashSet.add(userKokos);
         usersHashSet.add(userKotov);
@@ -135,8 +203,8 @@ public class Main {
         Iterator<User> userIterator = usersHashSet.iterator();
         while (userIterator.hasNext()){
             User user = userIterator.next();
-            if (user.getGender().equals("MALE")){
-//                System.out.println(user);
+            if (user.getGender().equals("FEMALE")){
+                System.out.println(user);
                 userIterator.remove();
             }
         }
@@ -144,18 +212,19 @@ public class Main {
 
 
 
-//        TreeSet<User> usersTreeSet = new TreeSet<>();
-//        usersTreeSet.add(userPupkin);
-//        usersTreeSet.add(userKokos);
-//        usersTreeSet.add(userKotov);
-//        usersTreeSet.add(userMorozova);
-//        usersTreeSet.add(userKoksova);
-//        usersTreeSet.add(userSovor);
-//        usersTreeSet.add(userMohov);
-//        usersTreeSet.add(userBarova);
-//        usersTreeSet.add(userKrotova);
-//        usersTreeSet.add(userSmehova);
-
+        TreeSet<User> usersTreeSet = new TreeSet<>();
+        usersTreeSet.add(userPupkin);
+        usersTreeSet.add(userKokos);
+        usersTreeSet.add(userKotov);
+        usersTreeSet.add(userMorozova);
+        usersTreeSet.add(userKoksova);
+        usersTreeSet.add(userSovor);
+        usersTreeSet.add(userMohov);
+        usersTreeSet.add(userBarova);
+        usersTreeSet.add(userKrotova);
+        usersTreeSet.add(userSmehova);
+        System.out.println("--------------------");
+        System.out.println(usersTreeSet);
     }
 
 }
